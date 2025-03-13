@@ -24,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${Outfit.className} ${Ovo.className} antialiased`}>
+      <body
+        className={`${Outfit.className} ${Ovo.className} antialiased leading-8 overflow-x-hidden`}
+      >
         {children}
       </body>
     </html>
