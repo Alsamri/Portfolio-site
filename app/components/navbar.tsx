@@ -4,6 +4,13 @@ import { assets } from "@/assets/assets";
 const Navbar: React.FC = () => {
   return (
     <>
+      <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+        <Image
+          src={assets.header_bg_color}
+          alt="navbar background"
+          className="w-full"
+        />
+      </div>
       <nav
         className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
       flex item-center justify-between z-50"
@@ -15,24 +22,32 @@ const Navbar: React.FC = () => {
             className="w-28 cursor-pointer mr-14"
           />
         </a>
-        <ul className="hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3">
+        <ul className="hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-70">
           <li>
-            <a href="#top">Home</a>
+            <a className="font-Ovo" href="#top">
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about">About me</a>
+            <a className="font-Ovo" href="#about">
+              About me
+            </a>
           </li>
           <li>
-            <a href="#work">My work</a>
+            <a className="font-Ovo" href="#work">
+              My work
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact me</a>
+            <a className="font-Ovo" href="#contact">
+              Contact me
+            </a>
           </li>
         </ul>
         <div>
           <a
             href="#contact"
-            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
+            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo"
           >
             Contact{" "}
             <Image src={assets.arrow_icon} alt="arrow-Logo" className="w-3" />
