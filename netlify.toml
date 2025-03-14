@@ -2,11 +2,8 @@
   command = "npm run build"
   publish = ".next" 
 
-[build.environment]
-  NODE_ENV = "production"
 
-# Cache configuration
 [[build.caching]]
   directory = "/opt/buildhome/cache/.next/cache" 
 [[build.caching]]
-  directory = "/opt/buildhome/cache/node_modules" 
+  directory = "/opt/buildhome/cache/node_modules"
