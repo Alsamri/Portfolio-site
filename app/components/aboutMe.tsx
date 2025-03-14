@@ -47,10 +47,13 @@ const AboutMe: React.FC = () => {
             ))}
           </ul>
 
-          <h4 className="text-center mb-4">What I use</h4>
+          <h4 className="text-center mb-4 my-6">What I use</h4>
           <ul className="flex justify-center items-center gap-3 sm:gap-5">
             {toolsData.map((tool, index) => (
-              <li key={index}>
+              <li
+                className="flex items-center justify-center cursor-pointer hover:-translate-y-1 duration-500"
+                key={index}
+              >
                 <Image src={tool} alt="tool" className="w-5 sm:w-7" />
               </li>
             ))}

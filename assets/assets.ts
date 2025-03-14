@@ -36,9 +36,13 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
-import { title } from "process";
-
+import next from "./Next.svg";
+import node_js from "./Node.svg";
+import express from "./Express.svg";
 export const assets: Record<string, StaticImageData> = {
+  express,
+  node_js,
+  next,
   javascript,
   typescript,
   postgres,
@@ -172,6 +176,8 @@ export const infoList: InfoItem[] = [
 ];
 
 export const toolsData: StaticImageData[] = [
+  assets.node_js,
+  assets.express,
   assets.vscode,
   assets.react_icon,
   assets.postgres,
@@ -179,4 +185,5 @@ export const toolsData: StaticImageData[] = [
   assets.javascript,
   assets.figma,
   assets.git,
+  assets.next,
 ];
