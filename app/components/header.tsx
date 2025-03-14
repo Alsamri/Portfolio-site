@@ -1,27 +1,27 @@
 import React from "react";
 import Image from "next/image";
-import { assets } from "@/assets/assets";
 
+import { assets } from "@/assets/assets";
 export const Header: React.FC = () => {
   return (
     <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-      <div>
+      <div className="mt-20">
         <Image
           src={assets.profile_img}
           alt=""
           className="rounded-full w-35 h-35"
         />
       </div>
-      <h3 className="flex items-center gap-2 text-xl md:text-2x1 mb-3 font-Ovo">
-        Hey! I'm Alois Alamri{" "}
+      <h3 className="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+        Hey! I&apos;m Alois Alamri{" "}
         <Image src={assets.hand_icon} alt="" className="rounded-full w-6" />
       </h3>
       <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
-        Junior Full-stack developer based in london
+        Junior Full-stack developer based in London
       </h1>
-      <p className="max-w-2x1 mx-auto font-Ovo">
-        I'm a Junior Software Developer passionate about solving problems
-        creatively and delivering client-centric products. I’ve contributed to
+      <p className="max-w-2xl mx-auto font-Ovo">
+        I&apos;m a Junior Software Developer passionate about solving problems
+        creatively and delivering client-centric products. I have contributed to
         both backend and frontend development, ensuring smooth functionality and
         excellent user experiences.
       </p>
