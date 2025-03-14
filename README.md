@@ -1,5 +1,6 @@
 ## Under Development
-
+This project is under construction :)
+ but feel free to clone it and run it locally!
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
