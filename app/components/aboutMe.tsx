@@ -9,12 +9,13 @@ const AboutMe: React.FC = () => {
       <div className="flex w-full flex-col lg:flex-row items-center justify-center gap-20 my-20">
         <div className="flex-1 text-center">
           <p className="mb-10 max-w-2xl mx-auto font-Ovo">
-            I'm a Junior Software Developer with a deep passion for learning and
-            continuously improving my skills. I enjoy working on both frontend
-            and backend development, with a strong focus on JavaScript,
-            TypeScript, React, and Next.js. I'm committed to writing clean,
-            efficient code and paying close attention to the details that make
-            applications not just functional, but user-friendly and seamless.
+            I&apos;m a Junior Software Developer with a deep passion for
+            learning and continuously improving my skills. I enjoy working on
+            both frontend and backend development, with a strong focus on
+            JavaScript, TypeScript, React, and Next.js. I&apos;m committed to
+            writing clean, efficient code and paying close attention to the
+            details that make applications not just functional, but
+            user-friendly and seamless.
             <br />
             <br />
             I believe in the power of Test-Driven Development (TDD) to create
@@ -26,11 +27,11 @@ const AboutMe: React.FC = () => {
             <br />
             With a keen eye for detail and a collaborative mindset, I thrive in
             Agile environments, always eager to tackle new challenges and learn
-            from others to improve the projects I'm working on.
+            from others to improve the projects I&apos;m working on.
           </p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
-            {infoList.map(({ icon, iconDark, title, description }, index) => (
+            {infoList.map(({ icon, title, description }, index) => (
               <li
                 key={index}
                 className="flex flex-col items-center justify-center border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:-translate-y-1 duration-400"
