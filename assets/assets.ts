@@ -39,6 +39,7 @@ import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import next from "./Next.svg";
 import node_js from "./Node.svg";
 import express from "./Express.svg";
+
 export const assets: Record<string, StaticImageData> = {
   express,
   node_js,
@@ -85,28 +86,21 @@ interface WorkItem {
   title: string;
   description: string;
   bgImage: string;
+  url: string;
 }
 
 export const workData: WorkItem[] = [
   {
-    title: "Frontend project",
-    description: "Web Design",
+    title: "Full-Stack Project",
+    description: "News Forum",
     bgImage: "/work-1.png",
+    url: "https://aloisa.netlify.app/",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "Full-Stack Project",
+    description: "Gamified Open Source Platform",
     bgImage: "/work-2.png",
-  },
-  {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
-  },
-  {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    url: "https://github.com/nxvafps/code4change",
   },
 ];
 
