@@ -8,9 +8,9 @@ export const Projects = () => {
       <h2 className="text-center text-5xl font-Ovo">My latest work</h2>
       <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
         Welcome to my portfolio! As a passionate full-stack developer, I thrive
-        on turning ideas into reality. Here, you'll find a selection of projects
-        that showcase my journey, skills, and dedication to building impactful
-        solutions.
+        on turning ideas into reality. Here, you&apos;ll find a selection of
+        projects that showcase my journey, skills, and dedication to building
+        impactful solutions.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-10">
