@@ -3,10 +3,10 @@ import Image from "next/image";
 import { infoList, toolsData } from "@/assets/assets";
 const AboutMe: React.FC = () => {
   return (
-    <div id="about" className="w-full px-[12%] py-10 scroll-mt-20">
+    <div id="about" className="w-full px-[12%] py-20 scroll-mt-20">
       <h4 className="text-center mb-2 text-lg font-Ovo">Introduction</h4>
       <h2 className="text-center text-5xl font-Ovo">About me</h2>
-      <div className="flex w-full flex-col lg:flex-row items-center justify-center gap-20 my-20">
+      <div className="flex w-full flex-col lg:flex-row items-center justify-center gap-20 my-10">
         <div className="flex-1 text-center">
           <p className="mb-10 max-w-2xl mx-auto font-Ovo">
             I&apos;m a Junior Software Developer with a deep passion for
