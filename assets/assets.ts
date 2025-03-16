@@ -102,6 +102,12 @@ export const workData: WorkItem[] = [
     bgImage: "/work-2.png",
     url: "https://github.com/nxvafps/code4change",
   },
+  {
+    title: "Front-End Application",
+    description: "My Portfolio Site",
+    bgImage: "/work-3.png",
+    url: "https://alois-alamri.netlify.app",
+  },
 ];
 
 interface ServiceItem {
