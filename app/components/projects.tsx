@@ -1,7 +1,7 @@
 import { assets, workData } from "@/assets/assets";
 import React from "react";
 import Image from "next/image";
-export const Projects = () => {
+export const Projects: React.FC = () => {
   return (
     <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
       <h4 className="text-center mb-2 text-lg font-Ovo">My Portfolio</h4>
