@@ -1,7 +1,33 @@
 import React from "react";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
+import { useState } from "react";
 export const ContactMe: React.FC = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.currentTarget);
+
+    formData.append("access_key", "acfcd781-5333-4f53-bcfc-d3df59fea607");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.currentTarget.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div
       id="contact"
@@ -16,19 +42,21 @@ export const ContactMe: React.FC = () => {
         and let&apos;s make something awesome together.
       </p>
 
-      <form className="max-w-2x1 mx-auto">
+      <form onSubmit={onSubmit} className="max-w-xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 mb-8">
           <input
             type="text"
             placeholder="Enter your name"
             required
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            name="name"
           />
           <input
             type="email"
             placeholder="Enter your email"
             required
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            name="email"
           />
         </div>
         <textarea
@@ -36,6 +64,7 @@ export const ContactMe: React.FC = () => {
           placeholder="Enter your messege"
           required
           className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+          name="messege"
         ></textarea>
         <button
           type="submit"
@@ -48,6 +77,7 @@ export const ContactMe: React.FC = () => {
             className="w-4"
           />
         </button>
+        <p className="mt-4 text-center">{result}</p>
       </form>
     </div>
   );
