@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
-import { useState } from "react";
+
 export const ContactMe: React.FC = () => {
   const [result, setResult] = React.useState("");
 
