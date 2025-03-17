@@ -1,6 +1,7 @@
 "use client";
 import AboutMe from "./components/aboutMe";
 import ContactMe from "./components/ContactMe";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/header";
 import Navbar from "./components/navbar";
 import { Projects } from "./components/projects";
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutMe />
       <Projects />
       <ContactMe />
+      <Footer />
     </>
   );
 }
