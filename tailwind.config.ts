@@ -11,7 +11,7 @@ export default {
       colors: {
         lighthover: "#f5f5f5",
         darkhover: "#333333",
-        darktheme: "#1a1a1a",
+        darkTheme: "#11001f",
       },
       fontFamily: {
         Outfit: ["Outfit", "sans-serif"],
@@ -19,5 +19,6 @@ export default {
       },
     },
   },
+  darkMode: "class",
   plugins: [],
 };

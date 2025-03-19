@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { infoList, toolsData } from "@/assets/assets";
+
 const AboutMe: React.FC = () => {
   return (
     <div id="about" className="w-full px-[12%] py-20 scroll-mt-20">
@@ -30,11 +31,11 @@ const AboutMe: React.FC = () => {
             from others to improve the projects I&apos;m working on.
           </p>
 
-          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl mx-auto ">
             {infoList.map(({ icon, title, description }, index) => (
               <li
                 key={index}
-                className="flex flex-col items-center justify-center border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:-translate-y-1 duration-400"
+                className="flex flex-col items-center justify-center border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:-translate-y-1 duration-400 dark:bg-white/70"
               >
                 <Image src={icon} alt={title} className="w-7 mb-5" />
                 <div className="flex flex-col items-center">
@@ -48,13 +49,13 @@ const AboutMe: React.FC = () => {
           </ul>
 
           <h4 className="text-center mb-4 my-6">What I use</h4>
-          <ul className="flex justify-center items-center gap-3 sm:gap-5">
+          <ul className="flex flex-wrap justify-center items-center gap-3 sm:gap-5">
             {toolsData.map((tool, index) => (
               <li
-                className="flex items-center justify-center cursor-pointer hover:-translate-y-1 duration-500"
+                className="flex items-center justify-center w-14 h-14 sm:w-15 sm:h-15 md:w-17 md:h-17 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-white/70"
                 key={index}
               >
-                <Image src={tool} alt="tool" className="w-5 sm:w-7" />
+                <Image src={tool} alt="tool" className="w-11 sm:w-13 md:w-12" />
               </li>
             ))}
           </ul>

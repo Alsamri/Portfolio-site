@@ -1,13 +1,20 @@
 import React from "react";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
-export const Footer = () => {
+type Darkmode = {
+  isDark: boolean;
+};
+export const Footer: React.FC<Darkmode> = ({ isDark }) => {
   return (
     <div className="mt-20">
       <div className="text-center">
         <Image src={assets.logo} alt="logo" className="w-36 mx-auto mb-2" />
         <div className="w-max flex items-center gap-2 mx-auto">
-          <Image src={assets.mail_icon} alt="logo" className="w-6" />
+          <Image
+            src={isDark ? assets.mail_icon_dark : assets.mail_icon}
+            alt="logo"
+            className="w-6"
+          />
           alois.id@yahoo.com
         </div>
       </div>
