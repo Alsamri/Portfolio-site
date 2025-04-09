@@ -92,6 +92,12 @@ interface WorkItem {
 export const workData: WorkItem[] = [
   {
     title: "Full-Stack Project",
+    description: "Real-Time chat app",
+    bgImage: "/work-4.png",
+    url: "https://bubbly-q2bp.onrender.com",
+  },
+  {
+    title: "Full-Stack Project",
     description: "News Forum",
     bgImage: "/work-1.png",
     url: "https://aloisa.netlify.app/",
