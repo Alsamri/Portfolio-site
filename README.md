@@ -30,10 +30,4 @@ A personal portfolio website showcasing my projects and skills as a full-stack d
 This site uses Netlify's CI/CD pipeline for automated deployments:
 - Connected to GitHub repository
 - Automatic builds and deployments on push to main branch
-- Preview deployments for pull requests
-- Custom domain configuration with SSL certificate
 
-## Under Development
-This project is under construction :)
-
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
