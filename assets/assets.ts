@@ -92,7 +92,13 @@ interface WorkItem {
 export const workData: WorkItem[] = [
   {
     title: "Full-Stack Project",
-    description: "Real-Time chat app",
+    description: "Library system with book lending",
+    bgImage: "/work-5.png",
+    url: "https://bookx-library.vercel.app",
+  },
+  {
+    title: "Full-Stack Project",
+    description: "Real-Time chat app using socket",
     bgImage: "/work-4.png",
     url: "https://bubbly-q2bp.onrender.com",
   },
